@@ -1,0 +1,115 @@
+//
+package.jsonから下記も削除
+"eslintC_onfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+//
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "semi": "off",
+        "indent": "off",
+        "no-undef": "off",
+        "comma-dangle": "off",
+        "arrow-parens": "off",
+        "consistent-return": "off",
+        "no-nested-ternary": "off",
+        "no-unused-expressions": "off",
+        "no-confusing-arrow": "off",
+        "operator-linebreak": "off",
+        "object-curly-newline": "off",
+        "function-paren-newline": "off",
+        "implicit-arrow-linebreak": "off",
+        "class-methods-use-this": "off",
+        "no-useless-constructor": "off",
+        "space-before-function-paren": "off",
+        "no-unused-vars": "off",
+        "prettier/prettier": "error",
+        "import/no-extraneous-dependencies": "off",
+        "import/prefer-default-export": "off",
+        "import/extensions": "off",
+        "react/prop-types": "off",
+        "react/require-default-props": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".tsx"
+                ]
+            }
+        ],
+        "react/jsx-one-expression-per-line": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/jsx-wrap-multilines": "off",
+        "react/static-property-placement": "off",
+        "jsx-a11y/anchor-is-valid": [ "error", {
+            "components": [ "Link" ],
+            "specialLink": [ "hrefLeft", "hrefRight" ],
+            "aspects": [ "invalidHref", "preferButton" ]
+        }],
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "@typescript-eslint/no-unused-vars": ["error", { "varsIgnorePattern": "^_", "argsIgnorePattern": "^_" }],
+        "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off",
+        "@typescript-eslint/no-empty-interface": "off",
+        "@typescript-eslint/member-delimiter-style": [
+            "error",
+            {
+                "multiline": {
+                    "delimiter": "none",
+                    "requireLast": false
+                },
+                "singleline": {
+                    "delimiter": "comma",
+                    "requireLast": false
+                }
+            }
+        ],
+        "@typescript-eslint/ban-types": [
+            "error",
+            {
+                "types": {
+                    "{}": false
+                },
+                "extendDefaults": true
+            }
+        ],
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": "error"
+    },
+    "settings": {
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts", ".tsx"]
+        },
+        "import/resolver": {
+            "typescript": {
+                "alwaysTryTypes": true
+            }
+        }
+    }
+}
